@@ -1,0 +1,20 @@
+* LSTM unit works well on sequence-based tasks with long-term dependencies
+* GRU outperforms LSTM in terms of convergence in cpu tme and parameter updates and generalization
+* LSTM has memory cells and gates (input, forget, and output gates) to control what to keep and what to forget
+* LSTM can carry important information over long sequences without losing it.
+* LSTM decides how much of the memory to expose using the output gate
+* GRU is a simpler alternative to LSTM
+* It has update and reset gates to manage memory
+* GRU doesn’t have a separate memory cell; it updates its hidden state directly.
+* The reset gate allows GRU to forget previous state if needed (like at the start of a new sequence)
+* GRU exposes its whole internal state at every step (no output gate like LSTM)
+* LSTM controls how much memory to show using an output gate — GRU shows all of its memory
+* LSTM separates how much new info to add from what to forget — GRU combines these into one update gate
+* Both models add new info on top of old state instead of overwriting it — this helps learning long-term patterns and reduces vanishing gradients
+* GRU performed best in most music datasets, except Nottingham
+* LSTM and GRU both outperformed tanh in speech datasets
+* GRU was fastest in learning in terms of updates and CPU time
+* Performance between LSTM and GRU varied depending on the dataset
+* Gated units (LSTM and GRU) are clearly better than the traditional tanh unit for sequence modeling
+* No clear winner between LSTM and GRU
+* The best one depends on the specific task and dataset.
