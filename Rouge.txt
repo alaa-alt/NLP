@@ -1,0 +1,3 @@
+* The ROUGE metrics compare an automatically produced summary or translation against reference (high-quality and human-produced) summaries or translations.
+* ROUGE-N measures the number of matching n-grams between the model-generated text and a human-produced reference.
+* It measures the overlap of n-grams—sequences of 'n' words—between the candidate and reference texts.

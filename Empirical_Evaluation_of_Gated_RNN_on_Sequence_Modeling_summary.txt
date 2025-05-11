@@ -5,7 +5,7 @@
 * LSTM decides how much of the memory to expose using the output gate
 * GRU is a simpler alternative to LSTM
 * It has update and reset gates to manage memory
-* GRU doesn’t have a separate memory cell; it updates its hidden state directly.
+* GRU doesn’t have a separate memory cell, it updates its hidden state directly.
 * The reset gate allows GRU to forget previous state if needed (like at the start of a new sequence)
 * GRU exposes its whole internal state at every step (no output gate like LSTM)
 * LSTM controls how much memory to show using an output gate — GRU shows all of its memory

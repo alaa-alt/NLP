@@ -1,0 +1,6 @@
+* Attentional mechanism selectively focuses on parts of the source sentence during translation
+* Neural machine translation == NMT
+* Global approach always attends to all source words
+* Local approach only looks at a subset of source words at a time
+* Local achieves significant gain over the non-attentional approach
+* NMT generalizes well to very long word sequence

@@ -1,0 +1,13 @@
+* The paper suggests that the use of a fixed length vector is important in improving performance of the basic encoder-decoder architecture
+* The paper suggests that the model automatically searches for parts of a source sentence that are relevant to predicting a target word
+* NMT == Neural machine translation
+* NMT attempts to build and train a single, large neural network that reads a sentence and outputs a correct translation
+* An encoder neural network reads and encodes a source sentence
+into a fixed-length vector
+* A decoder outputs a translation from the encoded vector
+* Issue is a neural network needs to be able to compress all the necessary information of a source sentence into a fixed-length vector
+* solution is they introduce an extension to the encoder–decoder model which learns
+to align and translate jointly
+* it encodes the input sentence into a sequence of vectors and chooses a subset of these vectors adaptively while decoding the translation.
+* After testing, RNNsearch outperforms the conventional encoder–decodermodel (RNNencdec) significantly
+* Final challenge is to better handle unknown words 
